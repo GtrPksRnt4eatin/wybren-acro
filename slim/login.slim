@@ -1,0 +1,33 @@
+html
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    script src="https://cdn.auth0.com/js/lock/10.0/lock.min.js"
+
+  body
+
+    javascript:
+
+      var options = {
+        closable: false,
+        rememberLastLogin: true,
+        theme: {
+          logo: 'wybrenbeach.png',
+          primaryColor: 'orange'
+        }
+      }
+
+      var lock = new Auth0Lock(
+        'j6SaZRXSTRlcPAZ8sZa4mwz1BBXaR23Q',
+        'acrovids.auth0.com'
+      );
+
+      lock.on("authenticated", function(authResult) {
+
+        lock.getProfile(authResult.idToken, function(error, profile) {
+          if (error) { console.log(error); return; }
+          localStorage.setItem('token', authResult.idToken);
+          localStorage.setItem('profile', JSON.stringify(profile));
+        });
+      });
+
+      lock.show();

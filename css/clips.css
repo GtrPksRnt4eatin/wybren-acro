@@ -1,0 +1,34 @@
+.dataTables_wrapper {
+  margin: 1em;
+}
+
+@media screen and (max-aspect-ratio: 1/1) { 
+
+  th:nth-child(1) input {
+    width: 17.5vw;
+  }  
+
+  th:nth-child(2) input {
+    width: 21.5vw;
+  }
+
+  th:nth-child(3) input {
+    width: 50.2vw;
+  }
+
+  td:nth-child(1),
+  th:nth-child(1) {
+    width: 11vw !important;
+  }
+
+  td:nth-child(2),
+  th:nth-child(2) {
+    width: 15vw !important;
+  }
+
+  td:nth-child(3),
+  th:nth-child(3) {
+    width: 43vw !important;
+  }
+
+}

@@ -1,0 +1,24 @@
+html
+  head
+    title Wybren Acro Library
+    == css ['index','datatables','fonts','vidplayer']
+    == js  ['jquery','datatables','scroller','rivets','lib','vidplayer','index']
+  body
+
+    header
+      img src='wybrenbeach.png'
+      .title Wybrens Acrobatic Library
+
+    ul.modes 
+
+      li onclick="window.location.assign('clips.html');" 
+        p.title       Clips
+        p.description This is a single list which includes all the video clips in the library
+
+      li onclick="window.location.assign('flips.html');" 
+        p.title       Flips
+        p.description Find videos of tricks using the direction, magnitude and body shape of the flyer
+
+      li onclick="window.location.assign('poses.html');" 
+        p.title       Poses
+        p.description Find videos demonstrating particular poses or body shapes

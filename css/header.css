@@ -1,0 +1,35 @@
+header {
+  position: relative;
+  border: 2px solid black;
+  box-shadow: .3vw .3vw 1vw rgba(0,0,0,0.5);
+  margin: 1vw;
+}
+
+header img { 
+	width: 20%;
+	display: inline-block;
+  	border-right: 2px solid black;
+  	vertical-align: middle;
+  	box-sizing: border-box;
+  	opacity: 0.8;
+}
+
+header .title {
+	width: 80%;
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 5vh;
+	line-height: 10vh;
+	font-size: 4.5vh;
+}
+
+@media screen and (max-aspect-ratio: 1/1) { 
+
+  header .title {
+  	font-size: 6.5vw;
+  	line-height: 9vw;
+  	margin-left: 0;
+  	text-align: center;	
+  }
+
+}

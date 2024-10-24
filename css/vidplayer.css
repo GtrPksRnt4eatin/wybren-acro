@@ -1,0 +1,86 @@
+
+.vidbg {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+	display: none;
+	cursor: pointer;
+}
+
+.vidbg:before {
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+  height: 100%;
+}
+
+.vidplayer {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	background: black;
+}
+
+.vidplayer video {
+	box-shadow: 0 0 8px black;
+	height: 78vh;
+	background: black;
+}
+
+.controls, .vidtitle {
+	background-color: rgb(150,150,150);
+	padding: 10px 40px;
+	border: 5px solid black;
+	box-shadow: 0 0 8px black;
+}
+
+.controls button {
+	height: 2em;
+}
+
+.vidplayer .play, .vidplayer .stop {
+	font-family: icomoon;
+	display: inline-block;
+	font-size: 2vw;
+	margin: 0 0.5vw;
+	cursor: pointer;
+}
+
+.ctrl { display: inline-block;}
+
+.framebw:before  { content: 'Frame BW'; }
+.framefw:before  { content: 'Frame FW'; }
+.slomo:before   { content: 'Slo-Mo';   }
+
+@media screen and (max-aspect-ratio: 1/1) { 
+  .vidplayer { 
+  	width: 100vw; 
+  }
+
+  .ctrl { 
+  	display: block; 
+    margin: 2vw 0;
+  }
+
+  .vidplayer video,
+  .controls,
+  .vidtitle {
+  	width: 100%;
+  	box-sizing: border-box;
+  }
+
+  #myTable_wrapper {
+  	font-size: 4vw;
+  }
+
+  table {
+  	font-size: 3vw;
+  }
+
+  .vidplayer .play, .vidplayer .stop {
+  	font-size: 4em;
+  }
+}

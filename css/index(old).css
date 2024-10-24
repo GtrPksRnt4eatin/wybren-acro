@@ -1,0 +1,91 @@
+table.dataTable tbody tr.odd {
+	background-color: rgba(0,0,100,0.1);
+}
+
+td { cursor: pointer; text-align: center; }
+
+input { text-align: center;}
+
+#player {
+	display: none;
+	position: absolute;
+	top:0; bottom:0; left:0; right:0;
+	margin: auto;
+}
+
+header {
+	height: 10vh;
+	position: relative;
+	box-shadow: .3vw .3vw 1vw rgba(0,0,0,0.5);
+	margin: 1vw;
+	border: 2px solid black;
+}
+
+body {
+	background-color: rgba(210,210,255,0.5);
+    background-image: linear-gradient(white 1px, transparent 1px),
+    linear-gradient(90deg, white 1px, transparent 1px),
+    linear-gradient(rgba(0,0,0,.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,.1) 1px, transparent 1px);
+    background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+    background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+}
+
+header img { 
+	height: 20vw;
+	display: inline-block;
+  	border-right: 2px solid black;
+  	box-sizing: border-box;
+  	opacity: 0.8;
+}
+
+header .title {
+	display: inline-block;
+	margin-left: 5vh;
+	line-height: 10vh;
+	font-size: 4.5vh;
+	vertical-align: top;
+}
+
+header .modes {
+	float: right;
+	display:inline-block;
+	vertical-align: top;
+	margin: 0;
+}
+
+header .modes li {
+	height: 100%;
+	display: inline-block;
+	width: 10vh;
+	margin: 0 .5vh;
+	background: rgba(0,0,0,0.3);
+	line-height: 10vh;
+	text-align: center;
+	cursor: pointer;
+}
+
+.dataTables_scrollBody {
+	max-height: 65vh;
+}
+
+@media screen and (max-aspect-ratio: 1/1) { 
+  body {
+  	padding: 0;
+  	margin: 0;
+  }
+
+  header {
+    height: 20vw;
+    box-shadow: 0px 0px 4vw black;
+  }
+
+  header .title {
+  	font-size: 7vw;
+  	line-height: 10vw;
+  	width: 75vw;
+  	margin-left: 0;
+  	text-align: center;
+  	font-family: draft;
+  }
+}

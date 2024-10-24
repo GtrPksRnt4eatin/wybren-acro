@@ -1,0 +1,23 @@
+html
+  head
+    meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    script src="https://cdn.auth0.com/js/lock/10.0/lock.min.js"
+
+  body
+    div id="root" style="width: 320px; margin: 40px auto; padding: 10px; border-style: dashed; border-width: 1px; box-sizing: border-box;"
+
+    javascript:
+      var lock = new Auth0Lock('j6SaZRXSTRlcPAZ8sZa4mwz1BBXaR23Q', 'acrovids.auth0.com', {
+        container: 'root',
+        auth: {
+          redirectUrl: 'http://acrovids.com',
+          responseType: 'code',
+          params: {
+            scope: 'openid email' // Learn about scopes: https://auth0.com/docs/scopes
+          }
+        },
+        theme: {
+          logo: 'wybrenbeach.png',
+          primaryColor: 'orange'
+        }
+      });

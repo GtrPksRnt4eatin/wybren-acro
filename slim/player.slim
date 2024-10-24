@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+html
+  head
+    title Wybren Acro
+    ==js ['jquery','dataTables','rivets','lib','player']
+    ==css ['fonts','dataTables','player']
+  body
+    ul.vidlist
+      li rv-each-vid="videos" rv-on-click="getLink" rv-text='vid.clip_name' 
+
+    .rightcol
+      .vidplayer 
+        .vidtitle rv-text="currentvid.vid_key"
+        video#vid.video-js.vjs-default-skin data-setup='{}' preload="auto"
+          source#src1 type='video/webm'
+          source#src2 type='video/mp4'
+        .controls
+          #play onclick='play();' 
+          #stop onclick='stop();' 
+          .ctrl
+            input#rate type="range" min="1" max="100" value="100"
+            .rate
+          .ctrl
+            input#progress type="range" value="0" min="0" max="1000" style="width:500px;"
+            .prog
+          button onclick='stepBW();' back 1 frame
+          button onclick='stepFW();' fore 1 frame
+          button#slo onclick='superslowmo();' superslomo
+
+    #search
+      table
+        thead

@@ -1,0 +1,15 @@
+html
+	head
+		title Wybren Acro Library
+		== css ['index','datatables','fonts','vidplayer']
+		== js  ['jquery','datatables','scroller','rivets','lib','vidplayer','index']
+	body
+		header
+			img src='wybrenbeach.png'
+			.title Wybrens Acrobatic Library
+			ul.modes 
+			  li onclick="ChooseClips();" Clips
+			  li onclick="ChooseFlips();" Flips 
+			  li onclick="ChoosePoses();" Poses 
+
+		table#myTable

@@ -1,0 +1,22 @@
+html
+  head
+    == css ['dataTables']
+    == js ['jquery','dataTables','rivets', 'lib', 'videos']
+  body
+    table#t.display
+      thead
+        tr
+          th clip_name
+          th num_people
+          th twist
+          th rotation
+          th shape
+      tbody
+        tr rv-each-vid="videos" rv-on-click="getLink"
+          td rv-text='vid.clip_name' 
+          td rv-text='vid.clip_numpeople'
+          td 
+            | {vid.clip_twist | fmttwist}
+          td 
+            | {vid.clip_rotate_quarters | fmtrot} {vid.clip_rotate_dir}
+          td rv-text='vid.clip_rotate_shape'

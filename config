@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "heroku"]
+	url = https://git.heroku.com/wybren-acro.git
+	fetch = +refs/heads/*:refs/remotes/heroku/*
+[branch "main"]
+	remote = heroku
+	merge = refs/heads/master
+[remote "origin"]
+	url = git@github.com:GtrPksRnt4eatin/wybren-acro.git
+	fetch = +refs/heads/*:refs/remotes/origin/*

@@ -1,0 +1,93 @@
+body { 
+  margin: 0;
+  padding: 0;
+  text-align: center; 
+  font-family: draft;
+}
+
+body {
+  background-color: rgba(210,210,255,0.5);
+  background-image: linear-gradient(white 1px, transparent 1px),
+  linear-gradient(90deg, white 1px, transparent 1px),
+  linear-gradient(rgba(0,0,0,.1) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(0,0,0,.1) 1px, transparent 1px);
+  background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+}
+
+
+header {
+  position: relative;
+  border: 2px solid black;
+  box-shadow: .3vw .3vw 1vw rgba(0,0,0,0.5);
+  margin: 1vw;
+}
+
+header img { 
+	width: 20%;
+	display: inline-block;
+  	border-right: 2px solid black;
+  	vertical-align: middle;
+  	box-sizing: border-box;
+  	opacity: 0.8;
+}
+
+header .title {
+	width: 80%;
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: 5vh;
+	line-height: 10vh;
+	font-size: 4.5vh;
+}
+
+
+.modes {
+	display: block;
+	margin: 2vw 0 0 0;
+	padding: 0;
+}
+
+.modes li:hover {
+  background-color: rgba(100,100,255,0.1);
+}
+
+.modes li {
+	display: block;
+	margin: 4vw;
+  box-shadow: .3vw .3vw 1vw rgba(0,0,0,0.5);
+	text-align: center;
+	cursor: pointer;
+	border: 2px solid black;
+  border-radius: 0.5vw;
+}
+
+#mytable {
+  font-family: sans-serif;
+}
+
+
+@media screen and (max-aspect-ratio: 1/1) { 
+  header .title {
+  	font-size: 6.5vw;
+  	line-height: 9vw;
+  	margin-left: 0;
+  	text-align: center;
+  	
+  }
+
+  .modes li .title {
+    font-size: 20pt;
+    margin: 2vw;
+  }
+
+  .modes li .description {
+    font-size: 14pt;
+    margin: 2vw;
+  }
+  
+  .dataTables_info {
+    float: none;
+    padding: 0.5em;
+  }
+}

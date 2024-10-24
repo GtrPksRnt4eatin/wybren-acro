@@ -1,0 +1,95 @@
+body {
+	background-color: rgb(200,200,200);
+	margin: 0;
+}
+
+video {
+	box-shadow: 0 0 8px black;
+	width: 1280px;
+	max-height: 80vh;
+	background: black;
+}
+
+.vidplayer {
+	display: inline-block;
+	vertical-align: middle;
+	width: 72vw;
+	right: 0; top: 0; bottom: 0;
+	margin: auto;
+	padding: 1vw;
+	text-align: center;
+}
+
+.controls, .vidtitle {
+	background-color: rgb(150,150,150);
+	width: 1200px;
+	display: inline-block;
+	padding: 10px 40px;
+	margin: 10px 0 0;
+	box-shadow: 0 0 8px black;
+}
+
+.ctrl { display: inline-block;}
+
+#play, #stop {
+	font-family: icomoon;
+	display: inline-block;
+	font-size: 35px;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+
+ .vjs-loading-spinner {display:none !important;} 
+
+
+
+
+ ul {
+ 	list-style-type: none;
+ 	padding: 0; margin: 0;
+ }
+
+ .vidlist {
+ 	position: absolute;
+ 	left: 0; top: 0; bottom: 0;
+ 	width: 25vw;
+ 	overflow-y: scroll;
+ }
+
+ .vidlist li {
+ 	background: rgba(0,0,0,0.2);
+ 	padding: 1vw;
+ 	margin: 0.1vw;
+ 	border: 1px solid black;
+ 	color: white;
+ 	font-size: 0.8vw;
+ 	cursor: pointer;
+ }
+
+ .rightcol {
+ 	position: absolute;
+ 	right: 0; top: 0; bottom: 0;
+ 	width: 75vw;
+ 	box-shadow: 0 0 8px black inset;
+	background-color: rgb(100,100,100);
+}
+
+.rightcol:before {
+	content: '';
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.vidtitle {
+	margin-bottom: 0.5vw;
+}
+
+#search {
+	position: absolute;
+	width: 70vw;
+	height: 70vh;
+	left: 0; right: 0;
+	top: 0; bottom: 0;
+	margin: auto;
+}

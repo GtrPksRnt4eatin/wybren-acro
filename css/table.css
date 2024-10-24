@@ -1,0 +1,56 @@
+#mytable {
+  font-family: sans-serif;
+}
+
+.dataTables_scroll {
+  font-family: courier, sans-serif;
+}
+
+tbody {
+  overflow: hidden;
+}
+
+th {
+  border: 1px solid black;
+}
+
+td {
+  border: 1px solid black !important;
+}
+
+tr.even {
+  background-color: rgba(255,255,255,0.1) !important;
+} 
+
+tr.odd {
+  background-color: rgba(255,255,255,0.2) !important;
+}
+
+@media screen and (max-aspect-ratio: 1/1) { 
+
+  .dataTables_info {
+    float: none;
+    padding: 0.5em;
+  }
+
+  #myTable {
+    width: auto !important;
+  }
+
+  .dataTable,
+  .dataTables_scrollBody,
+  .dataTables_scrollFoot {
+    width: auto !important;
+  }
+
+  input {
+    display: inline-block;
+    font-size: 3.5vw;
+    text-align: center;
+  }
+
+  table.dataTable tfoot th {
+    padding: 1em 0.5em !important;
+  }
+
+}
